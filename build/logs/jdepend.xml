@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PDepend>
+  <Packages>
+    <Package name="+global">
+      <Stats>
+        <TotalClasses>6</TotalClasses>
+        <ConcreteClasses>6</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>6</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="E:\Work\wamp\www\laravel_test\app\controllers\BaseController.php">BaseController</Class>
+        <Class sourceFile="E:\Work\wamp\www\laravel_test\app\controllers\ShowcaseController.php">ShowcaseController</Class>
+        <Class sourceFile="E:\Work\wamp\www\laravel_test\app\database\seeds\DatabaseSeeder.php">DatabaseSeeder</Class>
+        <Class sourceFile="E:\Work\wamp\www\laravel_test\app\models\User.php">User</Class>
+        <Class sourceFile="E:\Work\wamp\www\laravel_test\app\tests\ShowcaseTest.php">ShowcaseTest</Class>
+        <Class sourceFile="E:\Work\wamp\www\laravel_test\app\tests\TestCase.php">TestCase</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package></Package>
+        <Package>+core</Package>
+        <Package>GuzzleHttp</Package>
+        <Package>Illuminate\Auth</Package>
+        <Package>Illuminate\Auth\Reminders</Package>
+        <Package>Illuminate\Foundation\Testing</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+  </Packages>
+  <Cycles/>
+</PDepend>
