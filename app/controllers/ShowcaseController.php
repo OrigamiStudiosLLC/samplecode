@@ -7,6 +7,24 @@ class ShowcaseController extends BaseController {
     }
 	
 	/**
+	* Renders The Data from the Feed.
+	*
+	*/
+	public function renderShowcase() {
+        if (Input::has('feed_url')):
+            $this->feedUrl = Input::get('feed_url');
+            try {
+                $data = $this->getFeed()->extractImages();
+            } catch (Exception $e) {
+                return Response::json(array('responseCode' => $e->getCode(), 'response' => $e->getMessage()), 400);
+            }
+        else:
+            return Response::json(array('responseCode' => 1, 'response' => 'Missing Feed url'), 412);
+        endif;
+        return Response::json(array('responseCode' => 200, 'response' => $data), 200);
+    }
+	
+	/**
 	* Get Feed from the Feed URL.
 	*
 	*/
