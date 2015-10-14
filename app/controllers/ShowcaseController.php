@@ -6,7 +6,6 @@ class ShowcaseController extends BaseController {
         $this->client = $client;
     }
 	
-	
 	/**
 	* Get Feed from the Feed URL.
 	*
@@ -34,10 +33,10 @@ class ShowcaseController extends BaseController {
 	*/
 	public function extractImages() {
         if (!is_null($this->feed) && is_array($this->feed)):
-            $data = array();
+            $data = [];
             foreach ($this->feed as $key => $item):
                 if (isset($item['headline']) && isset($item['cardImages'])):
-                    $data[] = array('title' => $item['headline'], 'images' => $item['keyArtImages']);
+                    $data[] = ['title' => $item['headline'], 'images' => $item['keyArtImages']];
                 endif;
             endforeach;
             return $data;
