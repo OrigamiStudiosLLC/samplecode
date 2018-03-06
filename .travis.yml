@@ -1,7 +1,5 @@
 language: php
 
-php:
-    - 7.0.2
 notifications:
     email:
     - husnain.sarwar@crewlogix.com
