@@ -5,6 +5,3 @@ notifications:
     - husnain.sarwar@crewlogix.com
     - khurram.ijaz@origamistudios.us
     
-
-before-script:
-    composer install --no-interaction
