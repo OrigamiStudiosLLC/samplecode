@@ -1,0 +1,14 @@
+language: php
+
+php:
+    - 5.3
+    - 5.4
+    - 5.5
+    - 5.6
+
+notifications:
+    email:
+    - husnain.sarwar@crewlogix.com
+
+before-script:
+    composer install --no-interaction
