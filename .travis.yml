@@ -7,6 +7,7 @@ notifications:
     - khurram.ijaz@origamistudios.us
     - aqsa.zafar@crewlogix.com
     - amy@origamistudios.us
+    
 install:
     # Install coveralls.phar
     - wget -c -nc --retry-connrefused --tries=0 https://github.com/php-coveralls/php-coveralls/releases/download/v2.0.0/php-coveralls.phar -O coveralls.phar
