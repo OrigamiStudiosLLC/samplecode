@@ -20,6 +20,7 @@ before_script:
     - ls -al
 script:
     - composer dump-autoload
+     - ./vendor/bin/phpunit --coverage-clover build/logs/clover.xml
 after_success:
     - composer update
     # Submit coverage report to Coveralls servers, see .coveralls.yml
