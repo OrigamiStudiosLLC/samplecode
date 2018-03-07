@@ -19,7 +19,6 @@ before_script:
     - ls -al
 script:
     - composer dump-autoload
-    - ./vendor/bin/phpunit --coverage-clover build/logs/clover.xml
 after_success:
     # Submit coverage report to Coveralls servers, see .coveralls.yml
     - travis_retry php coveralls.phar -v
