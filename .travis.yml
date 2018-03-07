@@ -6,3 +6,5 @@ notifications:
     - khurram.ijaz@origamistudios.us
     - aqsa.zafar@crewlogix.com
     - amy@origamistudios.us
+script:
+    - composer dump-autoload
