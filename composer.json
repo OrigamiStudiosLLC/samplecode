@@ -6,7 +6,7 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
-		
+		 "phpunit/phpunit": "@stable",
 		"guzzlehttp/guzzle": "~5.3"
 	},
 	"autoload": {
